@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.anhntn45.dogsapp.R;
 import com.anhntn45.dogsapp.model.Dog;
+import com.anhntn45.dogsapp.util.LoadImageUtil;
 
 import org.w3c.dom.Text;
 
@@ -64,6 +65,7 @@ public class DogsListAdapter extends RecyclerView.Adapter<DogsListAdapter.DogsLi
         public void bind(Dog dog) {
             dogName.setText(dog.dogBreed);
             dogLifeSpan.setText(dog.lifeSpan);
+            LoadImageUtil.loadImage(dogImg, dog.imageUrl, LoadImageUtil.circularProgressDrawable(dogImg.getContext()));
         }
     }
 }
