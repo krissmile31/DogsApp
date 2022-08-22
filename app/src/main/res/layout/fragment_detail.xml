@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailFragment">
+
+    <ImageView
+        android:id="@+id/dog_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_dog_icon"
+        android:scaleType="fitCenter"
+        android:minHeight="200dp"/>
+
+    <TextView
+        android:id="@+id/dog_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/dog_img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dog_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dog purpose"
+        style="@style/dog_feature"
+        android:layout_below="@id/dog_name"
+        />
+
+    <TextView
+        android:id="@+id/dog_temperament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dog temperament"
+        style="@style/dog_feature"
+        android:layout_below="@id/dog_purpose"
+        />
+
+    <TextView
+        android:id="@+id/dog_lifespan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dog lifespan"
+        android:layout_below="@id/dog_temperament"
+        style="@style/dog_feature" />
+
+
+</RelativeLayout>

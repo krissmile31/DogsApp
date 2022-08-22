@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dog_feature">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+</resources>
